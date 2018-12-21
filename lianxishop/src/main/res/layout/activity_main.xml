@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.example.lianxishop.view.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        ></com.example.lianxishop.view.TitleView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ccc"
+        />
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RadioButton
+            android:button="@null"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:checked="true"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/radio1"
+            android:textColor="@drawable/select"
+            android:text="综合"
+            />
+
+        <RadioButton
+            android:button="@null"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:textColor="@drawable/select"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/radio2"
+            android:text="销量"
+            />
+        <RadioButton
+            android:button="@null"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@drawable/select"
+            android:id="@+id/radio3"
+            android:text="价格"
+            />
+        <RadioButton
+            android:button="@null"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:textColor="@drawable/select"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="筛选"
+            />
+    </RadioGroup>
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/reciclr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.jcodecraeer.xrecyclerview.XRecyclerView>
+</LinearLayout>
